@@ -1,10 +1,5 @@
-import subprocess
-from playwright.sync_api import sync_playwright
 
-subprocess.run(
-    ["python", "-m", "playwright", "install", "chromium"],
-    check=True
-)
+from playwright.sync_api import sync_playwright
 
 import re
 
