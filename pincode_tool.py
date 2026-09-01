@@ -1,4 +1,11 @@
-from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+import subprocess
+from playwright.sync_api import sync_playwright
+
+subprocess.run(
+    ["python", "-m", "playwright", "install", "chromium"],
+    check=True
+)
+
 import re
 
 def search_google_maps(pincode):
