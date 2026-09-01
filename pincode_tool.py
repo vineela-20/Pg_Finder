@@ -4,7 +4,7 @@ import re
 def search_google_maps(pincode):
     with sync_playwright() as p:
         # OPEN BROWSER
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page(viewport={"width": 1400,"height": 900})
         # OPEN GOOGLE MAPS
         try:
