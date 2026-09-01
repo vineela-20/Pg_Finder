@@ -1,0 +1,4 @@
+playwright
+chromium
+pandas
+streamlit
